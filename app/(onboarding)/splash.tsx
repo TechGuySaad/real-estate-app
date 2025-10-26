@@ -1,7 +1,14 @@
-import React from "react";
+import { router } from "expo-router";
+import React, { useEffect } from "react";
 import { Image, View } from "react-native";
 
 const Splash = () => {
+  useEffect(() => {
+    setTimeout(() => {
+      router.replace("/(onboarding)/welcome");
+    }, 3000);
+  }, []);
+
   return (
     <View className="h-full flex flex-col items-center justify-center">
       <Image
