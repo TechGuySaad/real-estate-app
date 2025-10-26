@@ -1,10 +1,14 @@
 import React from "react";
-import { Text, View } from "react-native";
+import { Image, View } from "react-native";
 
 const Splash = () => {
   return (
     <View className="h-full flex flex-col items-center justify-center">
-      <Text className="w-20">Splash</Text>
+      <Image
+        width={20}
+        height={20}
+        source={require("../../assets/icons/splash-icon.png")}
+      />
     </View>
   );
 };
