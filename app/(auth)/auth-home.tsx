@@ -1,9 +1,11 @@
-import { Link } from "expo-router";
+import { Link, router } from "expo-router";
 import React from "react";
 import { Image, Pressable, Text, View } from "react-native";
 
 const AuthHome = () => {
-  const handleEmailLogin = () => {};
+  const handleEmailLogin = () => {
+    router.push("/(auth)/login");
+  };
 
   const handleGoogleLogin = () => {};
   return (
