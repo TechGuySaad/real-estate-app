@@ -7,7 +7,9 @@ const AuthHome = () => {
     router.push("/(auth)/login");
   };
 
-  const handleGoogleLogin = () => {};
+  const handleGoogleLogin = () => {
+    router.push("/(auth)/login");
+  };
   return (
     <View className=" h-full flex-col justify-end bg-gray-200">
       <View className=" h-1/4 rounded-t-3xl bg-white flex flex-col  items-center justify-between px-6 py-6">
@@ -27,7 +29,7 @@ const AuthHome = () => {
           </View>
         </Pressable>
         <Pressable
-          onPress={handleEmailLogin}
+          onPress={handleGoogleLogin}
           className="w-full rounded-xl border border-gray-100"
         >
           <View className="flex-row items-center justify-center gap-2 p-4">
