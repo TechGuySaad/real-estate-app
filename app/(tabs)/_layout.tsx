@@ -12,6 +12,7 @@ export default function RootLayout() {
         options={{
           title: "",
         }}
+        // tabBarIcon: ({ color }) => <FontAwesome size={28} name="cog" color={color} />,
       />
       <Tabs.Screen
         name="wishlist"
