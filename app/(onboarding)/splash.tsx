@@ -6,7 +6,7 @@ const Splash = () => {
   useEffect(() => {
     setTimeout(() => {
       router.replace("/(onboarding)/welcome");
-    }, 3000);
+    }, 4000);
   }, []);
 
   return (
