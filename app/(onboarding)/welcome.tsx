@@ -1,9 +1,10 @@
+import { router } from "expo-router";
 import React from "react";
 import { Pressable, Text, View } from "react-native";
 
 const welcome = () => {
   const handleContinue = () => {
-    console.log("I was clicked");
+    router.push("/(auth)/auth-home");
   };
   return (
     <View className=" h-full flex-col justify-end bg-gray-200">
@@ -21,7 +22,9 @@ const welcome = () => {
           onPress={handleContinue}
           className="bg-[#0163E1] text-white w-full p-4 rounded-xl"
         >
-          <Text className="w-20 mx-auto text-white">Continue</Text>
+          <Text className="w-20 mx-auto text-white font-semibold">
+            Continue
+          </Text>
         </Pressable>
       </View>
     </View>
