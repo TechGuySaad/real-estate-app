@@ -3,7 +3,8 @@ import "../global.css";
 export default function RootLayout() {
   return (
     <Stack
-      initialRouteName="(onboarding)/splash"
+      initialRouteName="(tabs)"
+      // initialRouteName="(onboarding)/splash"
       screenOptions={{
         headerShown: false,
       }}
